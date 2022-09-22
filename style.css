@@ -1,0 +1,78 @@
+.content {
+    height: 210%;
+    box-shadow: 10px 10px 10px 10px rgb(rgb136, 110, 110);
+    background: -webkit-linear-gradient(top, rgb(11, 170, 96), rgb(21, 160, 114), rgb(211, 211, 88), rgb(4, 150, 207), rgb(0, 60, 150), rgb(207, 91, 211), rgb(130, 42, 165));
+}
+
+.div1,
+.div3,
+.div5,
+.div7 {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(64, 226, 226);
+    animation-name: change;
+    animation-duration: 2s;
+}
+
+.div3 {
+    animation-delay: 4s;
+}
+
+.div5 {
+    animation-delay: 8s;
+}
+
+.div7 {
+    animation-delay: 12s;
+}
+
+@keyframes change {
+    0% {
+        background-color: blueviolet;
+        margin-left: 1100px;
+    }
+    100% {
+        background-color: rgb(162, 172, 20);
+        margin-right: 0px;
+        border-radius: 30px 60px;
+    }
+}
+
+.div2,
+.div4,
+.div6,
+.div8 {
+    width: 150px;
+    height: 150px;
+    background-color: lightgreen;
+    margin-left: 1180px;
+    left: 0;
+    animation-name: move;
+    animation-duration: 2s;
+    animation-delay: 2s;
+}
+
+.div4 {
+    animation-delay: 6s;
+}
+
+.div6 {
+    animation-delay: 10s;
+}
+
+.div8 {
+    animation-delay: 14s;
+}
+
+@keyframes move {
+    0% {
+        background-color: brown;
+        margin-left: 0px;
+    }
+    100% {
+        background-color: rgb(20, 172, 28);
+        margin-left: 1150px;
+        border-radius: 30px 60px;
+    }
+}
